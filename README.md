@@ -1,5 +1,6 @@
 # Parse to CSV Tool
-![CSV Parser Logo](https://github.com/user-attachments/assets/ba86bc79-92e4-4ca6-87ca-7b7ca6d3d82b)
+<img src="https://github.com/user-attachments/assets/ba86bc79-92e4-4ca6-87ca-7b7ca6d3d82b" alt="CSV Parser Logo" width="200"/>
+
 
 Easily convert text responses (CSV format) into CSV or JSON files with this handy tool. Perfect for generating test data from ChatGPT outputs or other text sources that need formatting into CSV or JSON.
 
