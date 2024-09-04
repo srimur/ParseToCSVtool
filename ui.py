@@ -19,8 +19,8 @@ class ChatGPTCSVParserApp:
         # else:
         #     print(f"Icon file not found: {icon_path}")
 
-        # title_label = ctk.CTkLabel(self.root, text="ChatGPT Parser", font=ctk.CTkFont(size=28, weight="bold"))
-        # title_label.pack(pady=(20, 10))
+        title_label = ctk.CTkLabel(self.root, text="ChatGPT Parser", font=ctk.CTkFont(size=28, weight="bold"))
+        title_label.pack(pady=(20, 10))
 
         self.text_area = ctk.CTkTextbox(self.root, height=350, width=800, corner_radius=10)
         self.placeholder = "Enter ChatGPT response here..."
