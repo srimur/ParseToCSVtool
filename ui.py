@@ -9,7 +9,7 @@ class ChatGPTCSVParserApp:
         ctk.set_default_color_theme("blue")
 
         self.root = ctk.CTk()
-        self.root.title("ChatGPT Parser")
+        self.root.title("Parse to CSV")
         self.root.geometry("900x600")
 
         # Set the window icon
@@ -19,11 +19,14 @@ class ChatGPTCSVParserApp:
         # else:
         #     print(f"Icon file not found: {icon_path}")
 
-        title_label = ctk.CTkLabel(self.root, text="ChatGPT CSV Parser", font=ctk.CTkFont(size=28, weight="bold"))
+        title_label = ctk.CTkLabel(self.root, text="Parse to CSV", font=ctk.CTkFont(size=28, weight="bold"))
         title_label.pack(pady=(20, 10))
 
         self.text_area = ctk.CTkTextbox(self.root, height=350, width=800, corner_radius=10)
-        self.placeholder = "Enter ChatGPT response here..."
+        self.placeholder = "If you want to generate test data in CSV format, this tool works on ChatGPT responses too..."
+        self.placeholder_color = "gray"  
+        self.default_text_color = "gray" 
+
         self.text_area.insert("1.0", self.placeholder)
         self.text_area.bind("<FocusIn>", self.clear_placeholder)
         self.text_area.bind("<FocusOut>", self.add_placeholder)
