@@ -17,7 +17,7 @@ Easily convert text responses (CSV format) into CSV or JSON files with this hand
 2. Simply execute the `.exe` file to start the application. No additional setup is required.
 
 ## How to Use
-![parser demo](https://github.com/user-attachments/assets/b51bf790-ea29-49a5-a520-87d716e37681)
+<img src="https://github.com/user-attachments/assets/b51bf790-ea29-49a5-a520-87d716e37681" alt="Parser Demo" width="300"/>
 
 1. **Enter Text**: Paste your data (e.g., ChatGPT response) into the text area.
 2. **Choose Format**: Select either CSV or JSON.
