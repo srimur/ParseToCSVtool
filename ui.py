@@ -13,14 +13,14 @@ class ChatGPTCSVParserApp:
         self.root.geometry("900x600")
 
         # Set the window icon
-        icon_path = os.path.join("assets", "logo.ico")
-        if os.path.exists(icon_path):
-            self.set_icon(icon_path)
-        else:
-            print(f"Icon file not found: {icon_path}")
+        # icon_path = os.path.join("assets", "logo.ico")
+        # if os.path.exists(icon_path):
+        #     self.set_icon(icon_path)
+        # else:
+        #     print(f"Icon file not found: {icon_path}")
 
-        title_label = ctk.CTkLabel(self.root, text="ChatGPT Parser", font=ctk.CTkFont(size=28, weight="bold"))
-        title_label.pack(pady=(20, 10))
+        # title_label = ctk.CTkLabel(self.root, text="ChatGPT Parser", font=ctk.CTkFont(size=28, weight="bold"))
+        # title_label.pack(pady=(20, 10))
 
         self.text_area = ctk.CTkTextbox(self.root, height=350, width=800, corner_radius=10)
         self.placeholder = "Enter ChatGPT response here..."
@@ -35,12 +35,12 @@ class ChatGPTCSVParserApp:
         save_json_button = ctk.CTkButton(self.root, text="Save as JSON", command=self.save_as_json, corner_radius=10, width=200)
         save_json_button.pack(pady=10)
 
-    def set_icon(self, icon_path):
-        try:
-            # Set the window icon (title bar and taskbar)
-            self.root.iconbitmap(icon_path)
-        except Exception as e:
-            print(f"Error setting icon: {e}")
+    # def set_icon(self, icon_path):
+    #     try:
+    #         # Set the window icon (title bar and taskbar)
+    #         self.root.iconbitmap(icon_path)
+    #     except Exception as e:
+    #         print(f"Error setting icon: {e}")
 
     def clear_placeholder(self, event):
         if self.text_area.get("1.0", "end-1c") == self.placeholder:
