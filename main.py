@@ -1,5 +1,9 @@
+# main.py
 from ui import ChatGPTCSVParserApp
 
-if __name__ == "__main__":
+def main():
     app = ChatGPTCSVParserApp()
-    app.run()
+    app.root.mainloop()
+
+if __name__ == "__main__":
+    main()
